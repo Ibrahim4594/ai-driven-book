@@ -478,3 +478,14 @@ Visit [Panaversity GitHub](https://github.com/panaversity) for:
 
 **Ready to dive deeper?** Head over to [Panaversity GitHub](https://github.com/panaversity) to access all learning materials and start your AI-driven development journey! 🎓
 
+---
+
+## 👨‍💻 Developer
+
+This book and website were developed by **Ibrahim Samad**
+
+- **GitHub Profile**: [https://github.com/Ibrahim4594](https://github.com/Ibrahim4594)
+- **This Project**: [https://github.com/Ibrahim4594/ai-driven-book](https://github.com/Ibrahim4594/ai-driven-book)
+
+Follow me for more AI-driven development projects, tools, and resources!
+

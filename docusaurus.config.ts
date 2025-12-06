@@ -78,8 +78,13 @@ const config: Config = {
           position: 'right',
         },
         {
-          href: 'https://github.com/ibrah/ai-driven-book',
+          href: 'https://github.com/Ibrahim4594/ai-driven-book',
           label: 'GitHub',
+          position: 'right',
+        },
+        {
+          href: 'https://github.com/Ibrahim4594',
+          label: 'My GitHub',
           position: 'right',
         },
       ],

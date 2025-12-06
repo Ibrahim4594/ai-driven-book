@@ -6,8 +6,8 @@
 .heroBanner {
   padding: 6rem 2rem;
   position: relative;
-  background: linear-gradient(135deg, #FFFFFF 0%, #F0F7FF 50%, #E6F2FF 100%);
-  color: var(--color-text-primary, #1F2937);
+  background: rgba(0, 0, 0, 0.8);
+  color: #FFFFFF;
   overflow: hidden;
   min-height: 85vh;
   display: flex;
@@ -67,7 +67,7 @@
   font-weight: 800;
   margin: 1rem 0;
   line-height: 1.2;
-  color: #1F2937;
+  color: #FFFFFF;
 }
 
 .gradient {
@@ -77,16 +77,36 @@
   -webkit-text-fill-color: transparent;
 }
 
+/* Pakistan Colors - Half Green, Half White */
+.pakistanText {
+  background: linear-gradient(90deg, #01411C 0%, #01411C 50%, #FFFFFF 50%, #FFFFFF 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  text-shadow: 0 0 20px rgba(1, 65, 28, 0.3);
+  animation: pakistanGlow 3s ease-in-out infinite;
+}
+
+@keyframes pakistanGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 10px rgba(1, 65, 28, 0.5));
+  }
+  50% {
+    filter: drop-shadow(0 0 20px rgba(1, 65, 28, 0.8)) drop-shadow(0 0 30px rgba(255, 255, 255, 0.5));
+  }
+}
+
 .heroSubtitle {
   font-size: 1.5rem;
-  color: #374151;
+  color: rgba(255, 255, 255, 0.9);
   margin: 1rem 0;
   font-weight: 500;
 }
 
 .heroDescription {
   font-size: 1.125rem;
-  color: #6B7280;
+  color: rgba(255, 255, 255, 0.8);
   margin: 1.5rem 0;
   line-height: 1.7;
 }

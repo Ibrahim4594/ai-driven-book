@@ -2,6 +2,8 @@ import React from 'react';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
+import BrowserOnly from '@docusaurus/BrowserOnly';
+import ParticleBackground from '@site/src/components/ParticleBackground';
 import styles from './index.module.css';
 
 function HomepageHeader() {
@@ -12,7 +14,7 @@ function HomepageHeader() {
         <div className={styles.heroLeft}>
           <div className={styles.heroLabel}>✨ The Complete Guide</div>
           <h1 className={styles.heroTitle}>
-            Build the Future with <span className={styles.gradient}>AI-Driven Development</span>
+            Build the Future with <span className={styles.pakistanText}>AI-Driven Development</span>
           </h1>
           <p className={styles.heroSubtitle}>
             Transform from traditional coding to AI-native development. Build enterprise apps 10x faster with specification-driven methodologies.
@@ -424,6 +426,9 @@ export default function Home(): JSX.Element {
     <Layout
       title={`Home`}
       description="Master AI-Driven and Spec-Driven Software Development with our comprehensive interactive guide">
+      <BrowserOnly>
+        {() => <ParticleBackground />}
+      </BrowserOnly>
       <HomepageHeader />
       <main>
         <StatsSection />

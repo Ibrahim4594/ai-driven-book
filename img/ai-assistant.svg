@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <!-- Background circles -->
+  <circle cx="400" cy="300" r="200" fill="#00D4FF" opacity="0.05"/>
+  <circle cx="400" cy="300" r="150" fill="#0099FF" opacity="0.08"/>
+
+  <!-- Robot/AI Assistant -->
+  <!-- Head -->
+  <rect x="320" y="180" width="160" height="140" rx="20" fill="#1A1A2E" stroke="#00D4FF" stroke-width="3"/>
+
+  <!-- Antenna -->
+  <line x1="400" y1="180" x2="400" y2="140" stroke="#00D4FF" stroke-width="4"/>
+  <circle cx="400" cy="130" r="12" fill="#00D4FF">
+    <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Eyes -->
+  <rect x="345" y="220" width="40" height="35" rx="8" fill="#00D4FF" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.4;0.8" dur="3s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="415" y="220" width="40" height="35" rx="8" fill="#00D4FF" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.4;0.8" dur="3s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Pupils -->
+  <circle cx="365" cy="237" r="8" fill="#0A0A0F"/>
+  <circle cx="435" cy="237" r="8" fill="#0A0A0F"/>
+
+  <!-- Smile -->
+  <path d="M 350 280 Q 400 300 450 280" fill="none" stroke="#00D4FF" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Body -->
+  <rect x="300" y="320" width="200" height="180" rx="15" fill="#2D3561" stroke="#0099FF" stroke-width="3"/>
+
+  <!-- Chest Panel -->
+  <rect x="340" y="360" width="120" height="100" rx="8" fill="#1A1A2E"/>
+
+  <!-- Code Lines on Chest -->
+  <line x1="355" y1="380" x2="435" y2="380" stroke="#00D4FF" stroke-width="2"/>
+  <line x1="355" y1="400" x2="445" y2="400" stroke="#0099FF" stroke-width="2"/>
+  <line x1="355" y1="420" x2="425" y2="420" stroke="#00D4FF" stroke-width="2"/>
+  <line x1="355" y1="440" x2="440" y2="440" stroke="#0099FF" stroke-width="2"/>
+
+  <!-- Arms -->
+  <!-- Left Arm -->
+  <rect x="250" y="340" width="50" height="120" rx="10" fill="#2D3561" stroke="#0099FF" stroke-width="2"/>
+  <circle cx="275" cy="470" r="20" fill="#00D4FF" opacity="0.6"/>
+
+  <!-- Right Arm -->
+  <rect x="500" y="340" width="50" height="120" rx="10" fill="#2D3561" stroke="#0099FF" stroke-width="2"/>
+  <circle cx="525" cy="470" r="20" fill="#00D4FF" opacity="0.6"/>
+
+  <!-- Person Interacting -->
+  <!-- Head -->
+  <circle cx="600" cy="320" r="30" fill="#E8B4B8"/>
+
+  <!-- Hair -->
+  <path d="M 580 305 Q 600 290 620 305 L 615 320 Q 600 295 585 320 Z" fill="#2D3561"/>
+
+  <!-- Body -->
+  <path d="M 600 350 L 580 430 L 595 430 L 600 380 L 605 430 L 620 430 L 600 350 Z" fill="#0066FF"/>
+
+  <!-- Arms pointing to robot -->
+  <path d="M 590 360 L 530 390 L 528 400 L 588 370 Z" fill="#E8B4B8"/>
+  <path d="M 590 355 L 580 380 L 590 385 L 600 360 Z" fill="#0099FF"/>
+
+  <!-- Chat Bubbles -->
+  <!-- Robot's bubble -->
+  <rect x="480" y="150" width="140" height="60" rx="15" fill="#00D4FF" opacity="0.2"/>
+  <polygon points="480,190 460,200 480,210" fill="#00D4FF" opacity="0.2"/>
+  <text x="500" y="175" font-family="Arial" font-size="14" fill="#00D4FF" font-weight="bold">How can I</text>
+  <text x="500" y="195" font-family="Arial" font-size="14" fill="#00D4FF" font-weight="bold">help you?</text>
+
+  <!-- User's bubble -->
+  <rect x="620" y="250" width="150" height="70" rx="15" fill="#0099FF" opacity="0.2"/>
+  <polygon points="620,280 600,285 620,290" fill="#0099FF" opacity="0.2"/>
+  <text x="635" y="275" font-family="Arial" font-size="13" fill="#0099FF">Write code for</text>
+  <text x="635" y="295" font-family="Arial" font-size="13" fill="#0099FF">my project!</text>
+
+  <!-- Floating Tech Icons -->
+  <!-- Gear -->
+  <g transform="translate(180, 380)">
+    <circle cx="0" cy="0" r="25" fill="none" stroke="#00D4FF" stroke-width="3" opacity="0.4"/>
+    <circle cx="0" cy="0" r="12" fill="#00D4FF" opacity="0.4"/>
+    <rect x="-4" y="-30" width="8" height="60" rx="2" fill="#00D4FF" opacity="0.4"/>
+    <rect x="-30" y="-4" width="60" height="8" rx="2" fill="#00D4FF" opacity="0.4"/>
+    <animateTransform attributeName="transform" type="rotate" from="0 180 380" to="360 180 380" dur="8s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Lightning Bolt -->
+  <path d="M 650 420 L 640 450 L 655 450 L 645 480 L 665 445 L 650 445 Z" fill="#00D4FF" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="1.5s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- Binary Code -->
+  <text x="200" y="250" font-family="monospace" font-size="20" fill="#0099FF" opacity="0.3">01010</text>
+  <text x="680" y="350" font-family="monospace" font-size="20" fill="#00D4FF" opacity="0.3">11001</text>
+
+  <!-- Decorative Particles -->
+  <circle cx="220" cy="200" r="3" fill="#00D4FF" opacity="0.6">
+    <animate attributeName="cy" values="200;190;200" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="700" cy="240" r="4" fill="#0099FF" opacity="0.6">
+    <animate attributeName="cy" values="240;230;240" dur="2.3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="240" cy="320" r="2.5" fill="#00D4FF" opacity="0.6">
+    <animate attributeName="cy" values="320;310;320" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+</svg>

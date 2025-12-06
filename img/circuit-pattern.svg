@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#000000;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#16213E;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#003D99;stop-opacity:1" />
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#bg-gradient)"/>
+
+  <!-- Circuit patterns -->
+  <g opacity="0.3" stroke="#00D4FF" stroke-width="2" fill="none" filter="url(#glow)">
+    <!-- Horizontal lines -->
+    <line x1="100" y1="200" x2="500" y2="200"/>
+    <line x1="600" y1="300" x2="900" y2="300"/>
+    <line x1="1000" y1="500" x2="1400" y2="500"/>
+    <line x1="200" y1="700" x2="600" y2="700"/>
+    <line x1="1200" y1="800" x2="1700" y2="800"/>
+
+    <!-- Vertical lines -->
+    <line x1="300" y1="100" x2="300" y2="400"/>
+    <line x1="700" y1="200" x2="700" y2="600"/>
+    <line x1="1200" y1="300" x2="1200" y2="700"/>
+    <line x1="400" y1="600" x2="400" y2="900"/>
+    <line x1="1500" y1="400" x2="1500" y2="900"/>
+
+    <!-- Connection points -->
+    <circle cx="300" cy="200" r="6" fill="#00D4FF"/>
+    <circle cx="500" cy="200" r="6" fill="#0099FF"/>
+    <circle cx="700" cy="300" r="6" fill="#00D4FF"/>
+    <circle cx="900" cy="300" r="6" fill="#0099FF"/>
+    <circle cx="1200" cy="500" r="6" fill="#00D4FF"/>
+    <circle cx="1400" cy="500" r="6" fill="#0099FF"/>
+    <circle cx="400" cy="700" r="6" fill="#00D4FF"/>
+    <circle cx="600" cy="700" r="6" fill="#0099FF"/>
+    <circle cx="1200" cy="800" r="6" fill="#00D4FF"/>
+    <circle cx="1500" cy="800" r="6" fill="#0099FF"/>
+  </g>
+
+  <!-- Glowing nodes -->
+  <g>
+    <circle cx="960" cy="300" r="80" fill="none" stroke="#00D4FF" stroke-width="3" opacity="0.4"/>
+    <circle cx="960" cy="300" r="60" fill="none" stroke="#0099FF" stroke-width="2" opacity="0.5"/>
+    <circle cx="960" cy="300" r="40" fill="#00D4FF" opacity="0.2"/>
+
+    <circle cx="400" cy="540" r="60" fill="none" stroke="#00D4FF" stroke-width="2" opacity="0.3"/>
+    <circle cx="400" cy="540" r="40" fill="none" stroke="#0099FF" stroke-width="2" opacity="0.4"/>
+    <circle cx="400" cy="540" r="30" fill="#00D4FF" opacity="0.2"/>
+
+    <circle cx="1520" cy="540" r="60" fill="none" stroke="#00D4FF" stroke-width="2" opacity="0.3"/>
+    <circle cx="1520" cy="540" r="40" fill="none" stroke="#0099FF" stroke-width="2" opacity="0.4"/>
+    <circle cx="1520" cy="540" r="30" fill="#00D4FF" opacity="0.2"/>
+  </g>
+
+  <!-- Particle effects -->
+  <g fill="#00D4FF" opacity="0.6">
+    <circle cx="200" cy="150" r="2"/>
+    <circle cx="800" cy="250" r="2"/>
+    <circle cx="1300" cy="400" r="2"/>
+    <circle cx="500" cy="600" r="2"/>
+    <circle cx="1600" cy="700" r="2"/>
+    <circle cx="300" cy="850" r="2"/>
+    <circle cx="1000" cy="950" r="2"/>
+
+    <circle cx="600" cy="100" r="1"/>
+    <circle cx="1100" cy="200" r="1"/>
+    <circle cx="400" cy="350" r="1"/>
+    <circle cx="1400" cy="550" r="1"/>
+    <circle cx="700" cy="750" r="1"/>
+    <circle cx="1700" cy="900" r="1"/>
+  </g>
+</svg>

@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <!-- Background -->
+  <rect width="800" height="600" fill="transparent"/>
+
+  <!-- Desk -->
+  <rect x="100" y="420" width="600" height="20" rx="4" fill="#1A1A2E"/>
+  <rect x="80" y="440" width="640" height="15" rx="3" fill="#16213E"/>
+
+  <!-- Monitor Stand -->
+  <rect x="370" y="350" width="60" height="70" rx="3" fill="#2D3561"/>
+  <rect x="350" y="350" width="100" height="15" rx="3" fill="#1A1A2E"/>
+
+  <!-- Monitor -->
+  <rect x="250" y="150" width="300" height="200" rx="8" fill="#1A1A2E" stroke="#00D4FF" stroke-width="3"/>
+
+  <!-- Monitor Screen -->
+  <rect x="265" y="165" width="270" height="170" rx="4" fill="#0A0A0F"/>
+
+  <!-- Code on Screen -->
+  <line x1="280" y1="185" x2="380" y2="185" stroke="#00D4FF" stroke-width="3" opacity="0.8"/>
+  <line x1="280" y1="205" x2="450" y2="205" stroke="#0099FF" stroke-width="3" opacity="0.7"/>
+  <line x1="295" y1="225" x2="420" y2="225" stroke="#00D4FF" stroke-width="3" opacity="0.6"/>
+  <line x1="280" y1="245" x2="460" y2="245" stroke="#0099FF" stroke-width="3" opacity="0.8"/>
+  <line x1="295" y1="265" x2="390" y2="265" stroke="#00D4FF" stroke-width="3" opacity="0.7"/>
+  <line x1="280" y1="285" x2="470" y2="285" stroke="#0099FF" stroke-width="3" opacity="0.6"/>
+  <line x1="280" y1="305" x2="410" y2="305" stroke="#00D4FF" stroke-width="3" opacity="0.8"/>
+
+  <!-- Cursor Blink -->
+  <rect x="475" y="300" width="8" height="18" fill="#00D4FF">
+    <animate attributeName="opacity" values="1;0;1" dur="1.5s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Person -->
+  <!-- Head -->
+  <circle cx="450" cy="280" r="35" fill="#00D4FF" opacity="0.3"/>
+  <circle cx="450" cy="275" r="30" fill="#E8B4B8"/>
+
+  <!-- Hair -->
+  <path d="M 430 260 Q 450 240 470 260 L 465 275 Q 450 250 435 275 Z" fill="#2D3561"/>
+
+  <!-- Body -->
+  <path d="M 450 305 L 430 380 L 445 380 L 450 330 L 455 380 L 470 380 L 450 305 Z" fill="#0066FF"/>
+
+  <!-- Arms -->
+  <!-- Left arm coding -->
+  <path d="M 440 320 L 380 340 L 375 350 L 435 330 Z" fill="#E8B4B8"/>
+  <path d="M 440 315 L 430 340 L 440 345 L 450 320 Z" fill="#0099FF"/>
+
+  <!-- Right arm on mouse -->
+  <path d="M 460 320 L 520 360 L 525 365 L 465 330 Z" fill="#E8B4B8"/>
+  <path d="M 460 315 L 470 340 L 460 345 L 450 320 Z" fill="#0099FF"/>
+
+  <!-- Keyboard -->
+  <rect x="200" y="430" width="180" height="60" rx="6" fill="#2D3561"/>
+  <rect x="210" y="440" width="160" height="40" rx="3" fill="#1A1A2E"/>
+  <!-- Keys -->
+  <g opacity="0.5">
+    <rect x="220" y="448" width="12" height="10" rx="2" fill="#00D4FF"/>
+    <rect x="235" y="448" width="12" height="10" rx="2" fill="#00D4FF"/>
+    <rect x="250" y="448" width="12" height="10" rx="2" fill="#00D4FF"/>
+    <rect x="265" y="448" width="12" height="10" rx="2" fill="#00D4FF"/>
+    <rect x="280" y="448" width="12" height="10" rx="2" fill="#00D4FF"/>
+    <rect x="220" y="463" width="12" height="10" rx="2" fill="#00D4FF"/>
+    <rect x="235" y="463" width="12" height="10" rx="2" fill="#00D4FF"/>
+    <rect x="250" y="463" width="25" height="10" rx="2" fill="#0099FF"/>
+    <rect x="280" y="463" width="12" height="10" rx="2" fill="#00D4FF"/>
+  </g>
+
+  <!-- Mouse -->
+  <ellipse cx="530" cy="365" rx="15" ry="20" fill="#2D3561"/>
+  <line x1="530" y1="355" x2="530" y2="375" stroke="#00D4FF" stroke-width="1"/>
+
+  <!-- Coffee Cup -->
+  <ellipse cx="600" cy="430" rx="20" ry="5" fill="#1A1A2E"/>
+  <path d="M 580 430 L 585 395 L 615 395 L 620 430 Z" fill="#00D4FF" opacity="0.3"/>
+  <path d="M 580 430 L 585 395 L 615 395 L 620 430 Z" fill="none" stroke="#00D4FF" stroke-width="2"/>
+  <path d="M 620 405 Q 635 405 635 415 Q 635 425 620 425" fill="none" stroke="#00D4FF" stroke-width="2"/>
+  <!-- Steam -->
+  <path d="M 590 385 Q 585 375 590 365" fill="none" stroke="#00D4FF" stroke-width="1.5" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;0.2;0.5" dur="2s" repeatCount="indefinite"/>
+  </path>
+  <path d="M 605 385 Q 610 375 605 365" fill="none" stroke="#00D4FF" stroke-width="1.5" opacity="0.5">
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="2.2s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- Books Stack -->
+  <rect x="120" y="390" width="80" height="15" rx="2" fill="#0066FF"/>
+  <rect x="125" y="375" width="75" height="15" rx="2" fill="#0099FF"/>
+  <rect x="130" y="360" width="70" height="15" rx="2" fill="#00D4FF"/>
+
+  <!-- Floating Code Symbols -->
+  <text x="600" y="200" font-family="monospace" font-size="40" fill="#00D4FF" opacity="0.3">&lt;/&gt;</text>
+  <text x="150" y="250" font-family="monospace" font-size="35" fill="#0099FF" opacity="0.3">{}</text>
+  <text x="650" y="320" font-family="monospace" font-size="30" fill="#00D4FF" opacity="0.3">AI</text>
+
+  <!-- Decorative Dots -->
+  <circle cx="120" cy="180" r="4" fill="#00D4FF" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="680" cy="250" r="5" fill="#0099FF" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="140" cy="320" r="3" fill="#00D4FF" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="2.8s" repeatCount="indefinite"/>
+  </circle>
+</svg>

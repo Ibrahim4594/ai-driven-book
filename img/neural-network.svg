@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="neural-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0A0A0F;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213E;stop-opacity:1" />
+    </linearGradient>
+
+    <radialGradient id="node-glow">
+      <stop offset="0%" style="stop-color:#00D4FF;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0099FF;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#0066FF;stop-opacity:0" />
+    </radialGradient>
+
+    <filter id="blur">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#neural-bg)"/>
+
+  <!-- Neural network connections -->
+  <g stroke="#0099FF" stroke-width="1.5" opacity="0.4" fill="none">
+    <!-- Layer 1 to Layer 2 -->
+    <line x1="150" y1="100" x2="400" y2="150"/>
+    <line x1="150" y1="100" x2="400" y2="250"/>
+    <line x1="150" y1="100" x2="400" y2="350"/>
+    <line x1="150" y1="100" x2="400" y2="450"/>
+
+    <line x1="150" y1="300" x2="400" y2="150"/>
+    <line x1="150" y1="300" x2="400" y2="250"/>
+    <line x1="150" y1="300" x2="400" y2="350"/>
+    <line x1="150" y1="300" x2="400" y2="450"/>
+
+    <line x1="150" y1="500" x2="400" y2="150"/>
+    <line x1="150" y1="500" x2="400" y2="250"/>
+    <line x1="150" y1="500" x2="400" y2="350"/>
+    <line x1="150" y1="500" x2="400" y2="450"/>
+
+    <!-- Layer 2 to Layer 3 -->
+    <line x1="400" y1="150" x2="650" y2="200"/>
+    <line x1="400" y1="150" x2="650" y2="300"/>
+    <line x1="400" y1="150" x2="650" y2="400"/>
+
+    <line x1="400" y1="250" x2="650" y2="200"/>
+    <line x1="400" y1="250" x2="650" y2="300"/>
+    <line x1="400" y1="250" x2="650" y2="400"/>
+
+    <line x1="400" y1="350" x2="650" y2="200"/>
+    <line x1="400" y1="350" x2="650" y2="300"/>
+    <line x1="400" y1="350" x2="650" y2="400"/>
+
+    <line x1="400" y1="450" x2="650" y2="200"/>
+    <line x1="400" y1="450" x2="650" y2="300"/>
+    <line x1="400" y1="450" x2="650" y2="400"/>
+  </g>
+
+  <!-- Layer 1 nodes (Input) -->
+  <g>
+    <circle cx="150" cy="100" r="20" fill="url(#node-glow)" opacity="0.8"/>
+    <circle cx="150" cy="100" r="15" fill="#00D4FF" opacity="0.6"/>
+    <circle cx="150" cy="100" r="10" fill="#00D4FF"/>
+
+    <circle cx="150" cy="300" r="20" fill="url(#node-glow)" opacity="0.8"/>
+    <circle cx="150" cy="300" r="15" fill="#00D4FF" opacity="0.6"/>
+    <circle cx="150" cy="300" r="10" fill="#00D4FF"/>
+
+    <circle cx="150" cy="500" r="20" fill="url(#node-glow)" opacity="0.8"/>
+    <circle cx="150" cy="500" r="15" fill="#00D4FF" opacity="0.6"/>
+    <circle cx="150" cy="500" r="10" fill="#00D4FF"/>
+  </g>
+
+  <!-- Layer 2 nodes (Hidden) -->
+  <g>
+    <circle cx="400" cy="150" r="18" fill="url(#node-glow)" opacity="0.7"/>
+    <circle cx="400" cy="150" r="13" fill="#0099FF" opacity="0.6"/>
+    <circle cx="400" cy="150" r="8" fill="#0099FF"/>
+
+    <circle cx="400" cy="250" r="18" fill="url(#node-glow)" opacity="0.7"/>
+    <circle cx="400" cy="250" r="13" fill="#0099FF" opacity="0.6"/>
+    <circle cx="400" cy="250" r="8" fill="#0099FF"/>
+
+    <circle cx="400" cy="350" r="18" fill="url(#node-glow)" opacity="0.7"/>
+    <circle cx="400" cy="350" r="13" fill="#0099FF" opacity="0.6"/>
+    <circle cx="400" cy="350" r="8" fill="#0099FF"/>
+
+    <circle cx="400" cy="450" r="18" fill="url(#node-glow)" opacity="0.7"/>
+    <circle cx="400" cy="450" r="13" fill="#0099FF" opacity="0.6"/>
+    <circle cx="400" cy="450" r="8" fill="#0099FF"/>
+  </g>
+
+  <!-- Layer 3 nodes (Output) -->
+  <g>
+    <circle cx="650" cy="200" r="22" fill="url(#node-glow)" opacity="0.9"/>
+    <circle cx="650" cy="200" r="16" fill="#00D4FF" opacity="0.7"/>
+    <circle cx="650" cy="200" r="11" fill="#00D4FF"/>
+
+    <circle cx="650" cy="300" r="22" fill="url(#node-glow)" opacity="0.9"/>
+    <circle cx="650" cy="300" r="16" fill="#00D4FF" opacity="0.7"/>
+    <circle cx="650" cy="300" r="11" fill="#00D4FF"/>
+
+    <circle cx="650" cy="400" r="22" fill="url(#node-glow)" opacity="0.9"/>
+    <circle cx="650" cy="400" r="16" fill="#00D4FF" opacity="0.7"/>
+    <circle cx="650" cy="400" r="11" fill="#00D4FF"/>
+  </g>
+
+  <!-- Pulse animation dots -->
+  <g fill="#00D4FF" opacity="0.8">
+    <circle cx="275" cy="125" r="4">
+      <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="525" cy="225" r="4">
+      <animate attributeName="opacity" values="0;1;0" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="275" cy="325" r="4">
+      <animate attributeName="opacity" values="0;1;0" dur="3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

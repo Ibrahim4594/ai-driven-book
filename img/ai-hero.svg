@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="hero-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#000000;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0A0A0F;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213E;stop-opacity:1" />
+    </linearGradient>
+
+    <radialGradient id="glow-center">
+      <stop offset="0%" style="stop-color:#00D4FF;stop-opacity:0.6" />
+      <stop offset="50%" style="stop-color:#0099FF;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#0066FF;stop-opacity:0" />
+    </radialGradient>
+
+    <filter id="glow-strong">
+      <feGaussianBlur stdDeviation="5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <linearGradient id="blue-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0066FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00D4FF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="800" fill="url(#hero-bg)"/>
+
+  <!-- Central glow -->
+  <circle cx="600" cy="400" r="300" fill="url(#glow-center)" opacity="0.4"/>
+
+  <!-- Hexagon grid pattern -->
+  <g stroke="#0099FF" stroke-width="1" fill="none" opacity="0.2">
+    <polygon points="600,200 650,225 650,275 600,300 550,275 550,225"/>
+    <polygon points="550,225 600,200 600,150 550,125 500,150 500,200"/>
+    <polygon points="650,225 700,200 700,150 650,125 600,150 600,200"/>
+    <polygon points="500,275 550,300 550,350 500,375 450,350 450,300"/>
+    <polygon points="650,275 700,300 700,350 650,375 600,350 600,300"/>
+    <polygon points="600,350 650,375 650,425 600,450 550,425 550,375"/>
+    <polygon points="550,425 600,450 600,500 550,525 500,500 500,450"/>
+    <polygon points="650,425 700,450 700,500 650,525 600,500 600,450"/>
+  </g>
+
+  <!-- AI Brain symbol -->
+  <g filter="url(#glow-strong)">
+    <!-- Central core -->
+    <circle cx="600" cy="400" r="80" fill="none" stroke="url(#blue-gradient)" stroke-width="4"/>
+    <circle cx="600" cy="400" r="60" fill="none" stroke="#00D4FF" stroke-width="3"/>
+    <circle cx="600" cy="400" r="40" fill="none" stroke="#0099FF" stroke-width="2"/>
+    <circle cx="600" cy="400" r="20" fill="#00D4FF" opacity="0.6"/>
+
+    <!-- Orbiting elements -->
+    <g>
+      <!-- Node 1 -->
+      <circle cx="700" cy="300" r="25" fill="none" stroke="#00D4FF" stroke-width="3"/>
+      <circle cx="700" cy="300" r="18" fill="#0099FF" opacity="0.5"/>
+      <line x1="680" y1="320" x2="620" y2="380" stroke="#00D4FF" stroke-width="2"/>
+
+      <!-- Node 2 -->
+      <circle cx="500" cy="300" r="25" fill="none" stroke="#00D4FF" stroke-width="3"/>
+      <circle cx="500" cy="300" r="18" fill="#0099FF" opacity="0.5"/>
+      <line x1="520" y1="320" x2="580" y2="380" stroke="#00D4FF" stroke-width="2"/>
+
+      <!-- Node 3 -->
+      <circle cx="700" cy="500" r="25" fill="none" stroke="#00D4FF" stroke-width="3"/>
+      <circle cx="700" cy="500" r="18" fill="#0099FF" opacity="0.5"/>
+      <line x1="680" y1="480" x2="620" y2="420" stroke="#00D4FF" stroke-width="2"/>
+
+      <!-- Node 4 -->
+      <circle cx="500" cy="500" r="25" fill="none" stroke="#00D4FF" stroke-width="3"/>
+      <circle cx="500" cy="500" r="18" fill="#0099FF" opacity="0.5"/>
+      <line x1="520" y1="480" x2="580" y2="420" stroke="#00D4FF" stroke-width="2"/>
+
+      <!-- Node 5 -->
+      <circle cx="750" cy="400" r="20" fill="none" stroke="#00D4FF" stroke-width="2"/>
+      <circle cx="750" cy="400" r="14" fill="#0099FF" opacity="0.5"/>
+      <line x1="730" y1="400" x2="680" y2="400" stroke="#00D4FF" stroke-width="2"/>
+
+      <!-- Node 6 -->
+      <circle cx="450" cy="400" r="20" fill="none" stroke="#00D4FF" stroke-width="2"/>
+      <circle cx="450" cy="400" r="14" fill="#0099FF" opacity="0.5"/>
+      <line x1="470" y1="400" x2="520" y2="400" stroke="#00D4FF" stroke-width="2"/>
+    </g>
+  </g>
+
+  <!-- Data streams -->
+  <g stroke="#00D4FF" stroke-width="2" fill="none" opacity="0.5">
+    <path d="M 200 200 Q 300 250 400 200">
+      <animate attributeName="stroke-dasharray" from="0,1000" to="1000,0" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 800 200 Q 900 250 1000 200">
+      <animate attributeName="stroke-dasharray" from="0,1000" to="1000,0" dur="3.5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 200 600 Q 300 550 400 600">
+      <animate attributeName="stroke-dasharray" from="0,1000" to="1000,0" dur="4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 800 600 Q 900 550 1000 600">
+      <animate attributeName="stroke-dasharray" from="0,1000" to="1000,0" dur="3.2s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Floating particles -->
+  <g fill="#00D4FF">
+    <circle cx="250" cy="150" r="3" opacity="0.7">
+      <animate attributeName="cy" values="150;170;150" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="950" cy="180" r="3" opacity="0.6">
+      <animate attributeName="cy" values="180;200;180" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="300" cy="650" r="3" opacity="0.8">
+      <animate attributeName="cy" values="650;670;650" dur="4.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="4.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="900" cy="620" r="3" opacity="0.7">
+      <animate attributeName="cy" values="620;640;620" dur="3.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="3.8s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="150" cy="400" r="2" opacity="0.5">
+      <animate attributeName="cx" values="150;170;150" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1050" cy="400" r="2" opacity="0.5">
+      <animate attributeName="cx" values="1050;1030;1050" dur="5.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Binary code effect in corners -->
+  <g fill="#0099FF" font-family="monospace" font-size="12" opacity="0.3">
+    <text x="50" y="50">01001000 01100101 01101100 01101100 01101111</text>
+    <text x="50" y="70">01000001 01001001 00100000 01000100 01110010</text>
+    <text x="50" y="90">01101001 01110110 01100101 01101110</text>
+
+    <text x="850" y="750">01000100 01100101 01110110</text>
+    <text x="850" y="770">01100101 01101100 01101111 01110000</text>
+    <text x="850" y="790">01101101 01100101 01101110 01110100</text>
+  </g>
+</svg>

@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <!-- Mountain/Path Background -->
+  <path d="M 0 500 L 100 450 L 200 400 L 300 350 L 400 280 L 500 250 L 600 220 L 700 200 L 800 180 L 800 600 L 0 600 Z"
+        fill="#16213E" opacity="0.3"/>
+  <path d="M 0 520 L 150 470 L 300 420 L 450 350 L 600 300 L 750 260 L 800 240 L 800 600 L 0 600 Z"
+        fill="#1A1A2E" opacity="0.4"/>
+
+  <!-- Path Line -->
+  <path d="M 80 520 Q 200 450 350 380 Q 500 310 650 240"
+        fill="none" stroke="#00D4FF" stroke-width="4" stroke-dasharray="10,5" opacity="0.6"/>
+
+  <!-- Milestones/Checkpoints -->
+  <!-- Checkpoint 1 - Start -->
+  <g transform="translate(80, 520)">
+    <circle cx="0" cy="0" r="25" fill="#00D4FF" opacity="0.3"/>
+    <circle cx="0" cy="0" r="15" fill="#00D4FF"/>
+    <path d="M -5 0 L 0 5 L 8 -5" fill="none" stroke="#0A0A0F" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <text x="65" y="565" font-family="Arial" font-size="14" fill="#00D4FF" font-weight="bold">Start</text>
+
+  <!-- Checkpoint 2 -->
+  <g transform="translate(250, 430)">
+    <circle cx="0" cy="0" r="25" fill="#0099FF" opacity="0.3"/>
+    <circle cx="0" cy="0" r="15" fill="#0099FF"/>
+    <path d="M -5 0 L 0 5 L 8 -5" fill="none" stroke="#0A0A0F" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <text x="225" y="475" font-family="Arial" font-size="13" fill="#0099FF">Basics</text>
+
+  <!-- Checkpoint 3 -->
+  <g transform="translate(420, 350)">
+    <circle cx="0" cy="0" r="25" fill="#0099FF" opacity="0.3"/>
+    <circle cx="0" cy="0" r="15" fill="#0099FF"/>
+    <path d="M -5 0 L 0 5 L 8 -5" fill="none" stroke="#0A0A0F" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <text x="390" y="395" font-family="Arial" font-size="13" fill="#0099FF">Advanced</text>
+
+  <!-- Checkpoint 4 - Target -->
+  <g transform="translate(650, 240)">
+    <circle cx="0" cy="0" r="35" fill="#00D4FF" opacity="0.2"/>
+    <circle cx="0" cy="0" r="25" fill="#00D4FF" opacity="0.4"/>
+    <circle cx="0" cy="0" r="15" fill="#00D4FF"/>
+    <path d="M -6 -2 L -2 6 L 6 -6" fill="none" stroke="#0A0A0F" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <text x="620" y="210" font-family="Arial" font-size="15" fill="#00D4FF" font-weight="bold">Master</text>
+
+  <!-- Person Climbing -->
+  <g transform="translate(420, 350)">
+    <!-- Head -->
+    <circle cx="40" cy="-30" r="20" fill="#E8B4B8"/>
+
+    <!-- Hair -->
+    <path d="M 25 -40 Q 40 -50 55 -40 L 52 -28 Q 40 -48 28 -28 Z" fill="#2D3561"/>
+
+    <!-- Body -->
+    <path d="M 40 -10 L 25 30 L 38 30 L 40 0 L 42 30 L 55 30 L 40 -10 Z" fill="#0066FF"/>
+
+    <!-- Arms - one reaching up -->
+    <path d="M 35 -5 L 15 -25 L 12 -18 L 32 2 Z" fill="#E8B4B8"/>
+    <path d="M 35 -8 L 25 5 L 35 8 L 45 -5 Z" fill="#0099FF"/>
+
+    <!-- Right arm -->
+    <path d="M 45 -5 L 65 5 L 68 12 L 48 2 Z" fill="#E8B4B8"/>
+    <path d="M 45 -8 L 55 5 L 45 8 L 35 -5 Z" fill="#0099FF"/>
+
+    <!-- Legs -->
+    <path d="M 30 30 L 20 55 L 30 58 L 38 35 Z" fill="#0A0A0F"/>
+    <path d="M 42 35 L 50 58 L 60 55 L 50 30 Z" fill="#0A0A0F"/>
+  </g>
+
+  <!-- Books/Resources Icons -->
+  <!-- Book 1 -->
+  <g transform="translate(180, 480)">
+    <rect x="0" y="0" width="40" height="55" rx="3" fill="#0066FF" opacity="0.8"/>
+    <rect x="5" y="5" width="30" height="45" rx="2" fill="#1A1A2E"/>
+    <line x1="12" y1="15" x2="28" y2="15" stroke="#00D4FF" stroke-width="2"/>
+    <line x1="12" y1="23" x2="28" y2="23" stroke="#00D4FF" stroke-width="2"/>
+    <line x1="12" y1="31" x2="28" y2="31" stroke="#00D4FF" stroke-width="2"/>
+  </g>
+
+  <!-- Laptop -->
+  <g transform="translate(500, 290)">
+    <rect x="0" y="0" width="60" height="40" rx="3" fill="#1A1A2E" stroke="#00D4FF" stroke-width="2"/>
+    <rect x="5" y="5" width="50" height="30" rx="2" fill="#0A0A0F"/>
+    <line x1="10" y1="12" x2="30" y2="12" stroke="#00D4FF" stroke-width="1.5"/>
+    <line x1="10" y1="18" x2="40" y2="18" stroke="#0099FF" stroke-width="1.5"/>
+    <line x1="10" y1="24" x2="35" y2="24" stroke="#00D4FF" stroke-width="1.5"/>
+    <rect x="-5" y="40" width="70" height="5" rx="2" fill="#2D3561"/>
+  </g>
+
+  <!-- Trophy at the top -->
+  <g transform="translate(650, 150)">
+    <ellipse cx="0" cy="0" rx="25" ry="8" fill="#2D3561"/>
+    <path d="M -20 0 L -15 -30 L 15 -30 L 20 0 Z" fill="#00D4FF" opacity="0.8"/>
+    <rect x="-8" y="-35" width="16" height="8" rx="2" fill="#00D4FF"/>
+    <circle cx="0" cy="-39" r="5" fill="#00D4FF"/>
+    <!-- Handles -->
+    <path d="M -20 -5 Q -35 -5 -35 -15 Q -35 -25 -20 -25" fill="none" stroke="#00D4FF" stroke-width="3"/>
+    <path d="M 20 -5 Q 35 -5 35 -15 Q 35 -25 20 -25" fill="none" stroke="#00D4FF" stroke-width="3"/>
+
+    <!-- Shine effect -->
+    <circle cx="0" cy="-20" r="30" fill="#00D4FF" opacity="0.1">
+      <animate attributeName="opacity" values="0.1;0.3;0.1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Stars/Achievements -->
+  <g transform="translate(300, 380)">
+    <path d="M 0 -10 L 2.5 0 L 10 0 L 4 5 L 6 15 L 0 9 L -6 15 L -4 5 L -10 0 L -2.5 0 Z"
+          fill="#00D4FF" opacity="0.7">
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="2s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <g transform="translate(550, 260)">
+    <path d="M 0 -8 L 2 0 L 8 0 L 3 4 L 5 12 L 0 7 L -5 12 L -3 4 L -8 0 L -2 0 Z"
+          fill="#0099FF" opacity="0.7">
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="2.3s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Floating Text Labels -->
+  <text x="120" y="420" font-family="Arial" font-size="16" fill="#00D4FF" opacity="0.6">Learn</text>
+  <text x="340" y="320" font-family="Arial" font-size="16" fill="#0099FF" opacity="0.6">Practice</text>
+  <text x="560" y="230" font-family="Arial" font-size="16" fill="#00D4FF" opacity="0.6">Master</text>
+
+  <!-- Progress Indicator -->
+  <rect x="50" y="560" width="700" height="10" rx="5" fill="#1A1A2E"/>
+  <rect x="50" y="560" width="450" height="10" rx="5" fill="url(#progressGradient)"/>
+
+  <defs>
+    <linearGradient id="progressGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0066FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00D4FF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Percentage Text -->
+  <text x="505" y="555" font-family="Arial" font-size="18" fill="#00D4FF" font-weight="bold">65%</text>
+</svg>

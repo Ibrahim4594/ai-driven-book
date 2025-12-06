@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="code-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0A0A0F;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213E;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="screen-glow">
+      <stop offset="0%" style="stop-color:#00D4FF;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#0066FF;stop-opacity:0.4" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="600" fill="url(#code-bg)" rx="30"/>
+
+  <!-- Monitor/Screen -->
+  <rect x="100" y="120" width="400" height="280" rx="8" fill="#1A1A2E" stroke="#0099FF" stroke-width="3"/>
+  <rect x="110" y="130" width="380" height="260" rx="4" fill="#000000"/>
+
+  <!-- Code lines with glow -->
+  <g fill="#00D4FF" font-family="monospace" font-size="16" opacity="0.9">
+    <text x="130" y="160"><tspan fill="#0099FF">const</tspan> ai = <tspan fill="#00D4FF">new</tspan> AI();</text>
+    <text x="130" y="190"><tspan fill="#0099FF">function</tspan> <tspan fill="#00D4FF">generate</tspan>Code() {</text>
+    <text x="150" y="220"><tspan fill="#66E6FF">return</tspan> ai.<tspan fill="#00D4FF">create</tspan>();</text>
+    <text x="130" y="250">}</text>
+    <text x="130" y="290"><tspan fill="#00D4FF">// AI-Driven Development</tspan></text>
+    <text x="130" y="320" fill="#0099FF" opacity="0.7">console.log('Building...');</text>
+  </g>
+
+  <!-- Cursor blink -->
+  <rect x="330" y="305" width="12" height="20" fill="#00D4FF">
+    <animate attributeName="opacity" values="1;0;1" dur="1.5s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- AI Brain icon above screen -->
+  <g transform="translate(280, 60)">
+    <circle cx="20" cy="20" r="25" fill="none" stroke="url(#screen-glow)" stroke-width="3"/>
+    <circle cx="20" cy="20" r="15" fill="#00D4FF" opacity="0.3"/>
+    <path d="M 10 20 Q 20 10 30 20 Q 20 30 10 20" fill="none" stroke="#00D4FF" stroke-width="2"/>
+    <circle cx="15" cy="15" r="3" fill="#00D4FF"/>
+    <circle cx="25" cy="15" r="3" fill="#00D4FF"/>
+    <circle cx="20" cy="25" r="3" fill="#00D4FF"/>
+  </g>
+
+  <!-- Floating code symbols -->
+  <g fill="#0099FF" opacity="0.4">
+    <text x="60" y="300" font-size="40" font-family="monospace">{</text>
+    <text x="540" y="250" font-size="40" font-family="monospace">}</text>
+    <text x="50" y="450" font-size="35" font-family="monospace">&lt;/&gt;</text>
+    <text x="520" y="400" font-size="35" font-family="monospace">( )</text>
+  </g>
+
+  <!-- Data particles -->
+  <g fill="#00D4FF">
+    <circle cx="150" cy="470" r="4" opacity="0.7">
+      <animate attributeName="cy" values="470;490;470" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="450" cy="480" r="4" opacity="0.6">
+      <animate attributeName="cy" values="480;500;480" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="300" cy="460" r="3" opacity="0.8">
+      <animate attributeName="cy" values="460;480;460" dur="4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Bottom wave effect -->
+  <path d="M 0 500 Q 150 480 300 500 T 600 500 L 600 600 L 0 600 Z"
+        fill="url(#screen-glow)" opacity="0.2"/>
+</svg>

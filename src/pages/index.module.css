@@ -2,11 +2,11 @@
    CLEAN WHITE MINIMALIST HOMEPAGE - REACT NATIVE STYLE
    ============================================ */
 
-/* Hero Banner */
+/* Hero Banner - Clean & Simple */
 .heroBanner {
   padding: 6rem 2rem;
   position: relative;
-  background: linear-gradient(135deg, #FFFFFF 0%, #F0F7FF 50%, #E6F2FF 100%);
+  background: #FFFFFF;
   color: var(--color-text-primary, #1F2937);
   overflow: hidden;
   min-height: 85vh;
@@ -14,16 +14,9 @@
   align-items: center;
 }
 
-/* Subtle background accent */
+/* Clean background - no effects */
 .heroBanner::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: radial-gradient(circle at 50% 50%, rgba(0, 102, 255, 0.03) 0%, transparent 60%);
-  pointer-events: none;
+  display: none;
 }
 
 .heroContent {
@@ -704,12 +697,12 @@
 
 /* Hero Section Dark Mode */
 [data-theme='dark'] .heroBanner {
-  background: linear-gradient(135deg, #0F172A 0%, #1E293B 50%, #334155 100%);
+  background: #1a1a1a;
   color: #F8FAFC;
 }
 
 [data-theme='dark'] .heroBanner::before {
-  background: radial-gradient(circle at 50% 50%, rgba(96, 165, 250, 0.08) 0%, transparent 60%);
+  display: none;
 }
 
 [data-theme='dark'] .heroLabel {
